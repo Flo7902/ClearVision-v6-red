@@ -18,7 +18,7 @@
 
 :root {
   --main-color: #A10000;
-  --hover-color: #591010;
+  --hover-color: #581313;
   --success-color: #43b581;
   --danger-color: #E17777;
   --url-color: var(--main-color);
@@ -61,7 +61,7 @@
   --home-position: center;
   --home-size: 60px;
   --channel-unread: #FFFFFF;
-  --channel-color: rgb(255,255,255,0.3);
+  --channel-color: rgb(169,169,169,1);
   --muted-color: rgb(0,0,0,0.1);
   --online-color: #43b581;
   --idle-color: #faa61a;
@@ -71,7 +71,7 @@
   --main-font: calibri;
   --code-font: Consolas;
   --channels-width: 220px;
-  --members-width: 240px;
+  --members-width: 200px;
   --backdrop-overlay: rgba(0,0,0,0.8);
   --backdrop-image: var(--background-image);
   --backdrop-position: var(--background-position);
