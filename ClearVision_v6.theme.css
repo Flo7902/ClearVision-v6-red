@@ -1,5 +1,5 @@
 /**
- * @name Damn
+ * @name damn
  * @author ClearVision Team
  * @version 6.3.0
  * @description Highly customizable and beautiful theme for BetterDiscord.
@@ -13,6 +13,8 @@
 @import url('https://clearvision.github.io/ClearVision-v6/main.css');
 @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
 @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://nyri4.github.io/Discolored/main.css');
 
 :root {
   --main-color: #A10000;
@@ -55,9 +57,9 @@
   --user-modal-grayscale: 0%;
   --user-modal-invert: 0%;
   --user-modal-blur: 8px;
-  --home-icon: url('https://media.tenor.com/KChHVc7BktYAAAAd/discord-loading.gif');
+  --home-icon: url('https://i.imgur.com/qYx2rkJ.gif');
   --home-position: center;
-  --home-size: 40px;
+  --home-size: 60px;
   --channel-unread: #FFFFFF;
   --channel-color: rgb(255,255,255,0.3);
   --muted-color: rgb(0,0,0,0.1);
@@ -92,7 +94,7 @@
   --rs-small-width: 2px;
   --rs-medium-width: 4.5px;
   --rs-large-width: 5px;
-  --rs-avatar-shape: 31.5%;
+  --rs-avatar-shape: 50%;
   --rs-online-color: #43b581;
   --rs-idle-color: #faa61a;
   --rs-dnd-color: #f04747;
