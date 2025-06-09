@@ -1,94 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=calibri:wght@100;300;400;500;700&display=swap');
-@import url('https://clearvision.github.io/ClearVision-v6/main.css');
-@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
-
+/**
+ * @name ClearVision V7
+ * @author ClearVision Team
+ * @version 7.0.0
+ * @description Highly customizable theme for BetterDiscord and Vencord.
+ * @source https://github.com/ClearVision/ClearVision-v7
+ * @website https://clearvision.github.io
+ * @invite dHaSxn3
+ */
+/* IMPORT CSS */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
+/* SETTINGS */
 :root {
+  /* ACCENT COLORS */
   --main-color: #A10000;
   --hover-color: #581313;
-  --success-color: #43B581;
+  --success-color: #43b581;
   --danger-color: #E17777;
-  --url-color: var(--main-color);
-  --background-image: url('https://bogatyr.club/uploads/posts/2024-04/73986/1712098513_bogatyr-club-6p5f-p-krasnaya-luna-fon-32.jpg');
-  --background-shading: 0%;
-  --background-position: center;
-  --background-size: cover;
-  --background-repeat: no-repeat;
-  --background-attachment: fixed;
-  --background-brightness: 171%;
-  --background-contrast: 100%;
-  --background-saturation: 106%;
-  --background-grayscale: 0%;
-  --background-invert: 0%;
-  --background-blur: 0px;
-  --background-overlay: rgba(0,0,0,0.6);
-  --user-popout-image: url('https://i.pinimg.com/originals/6c/e8/4a/6ce84a94762963cbcf5bc7737d363575.jpg');
-  --user-popout-position: center;
-  --user-popout-size: cover;
-  --user-popout-repeat: no-repeat;
-  --user-popout-attachment: fixed;
-  --user-popout-brightness: 190%;
-  --user-popout-contrast: 100%;
-  --user-popout-saturation: 100%;
-  --user-popout-grayscale: 0%;
-  --user-popout-invert: 0%;
-  --user-popout-blur: 3px;
-  --user-modal-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/8760.jpg');
-  --user-modal-position: center;
-  --user-modal-size: cover;
-  --user-modal-repeat: no-repeat;
-  --user-modal-attachment: fixed;
-  --user-modal-brightness: 160%;
-  --user-modal-contrast: 100%;
-  --user-modal-saturation: 100%;
-  --user-modal-grayscale: 0%;
-  --user-modal-invert: 0%;
-  --user-modal-blur: 3px;
-  --home-icon: url('https://i.imgur.com/qYx2rkJ.gif');
-  --home-position: center;
-  --home-size: 60px;
-  --channel-unread: var(--main-color);
-  --channel-color: rgb(169,169,169,1);
-  --muted-color: rgb(255,255,255,0.21);
+  /* STATUS COLORS */
   --online-color: #43b581;
   --idle-color: #faa61a;
   --dnd-color: #982929;
   --streaming-color: #593695;
   --offline-color: #808080;
-  --main-font: calibri;
-  --code-font: Consolas;
-  --channels-width: 220px;
-  --members-width: 190px;
-  --backdrop-overlay: rgba(0,0,0,0.8);
-  --backdrop-image: var(--background-image);
-  --backdrop-position: var(--background-position);
-  --backdrop-size: var(--background-size);
-  --backdrop-repeat: var(--background-repeat);
-  --backdrop-attachment: var(--background-attachment);
-  --backdrop-brightness: var(--background-brightness);
-  --backdrop-contrast: var(--background-contrast);
-  --backdrop-saturation: var(--background-saturation);
-  --backdrop-invert: var(--background-invert);
-  --backdrop-grayscale: var(--background-grayscale);
-  --backdrop-sepia: var(--background-sepia);
-  --backdrop-blur: var(--background-blur);
-  --bd-blue: var(--main-color);
-  --bd-blue-hover: var(--hover-color);
-  --bd-blue-active: var(--hover-color);
-  --rs-small-spacing: 2px;
-  --rs-medium-spacing: 2px;
-  --rs-large-spacing: 2px;
-  --rs-small-width: 2px;
-  --rs-medium-width: 2px;
-  --rs-large-width: 2px;
-  --rs-avatar-shape: 50%;
-  --rs-online-color: #43b581;
-  --rs-idle-color: #faa61a;
-  --rs-dnd-color: #f04747;
-  --rs-offline-color: #636b75;
-  --rs-streaming-color: #643da7;
-  --rs-phone-visible: block;
+  /* APP BACKGROUND */
+  --background-shading-percent: 100%;
+  --background-image: url(https://i.imgur.com/mQacUAb.jpeg);
+  --background-attachment: fixed;
+  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: url('https://i.imgur.com/mQacUAb.jpeg');
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-position: center;
+  --user-popout-size: contain;
+  --user-popout-repeat: no-repeat;
+  --user-popout-blur: 3px;
+  --user-popout-filter: brightness(0.6) blur(2px);
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: url('https://i.imgur.com/mQacUAb.jpeg');
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-position: center;
+  --user-modal-size: auto;
+  --user-modal-blur: 3px;
+  --user-modal-repeat: no-repeat;
+  --user-modal-filter: brightness(1.5) blur(0.5px) opacity(20%);
+  /* HOME ICON */
+  --home-icon: url('https://i.imgur.com/qYx2rkJ.gif');
+  --home-position: center;
+  --home-size: 60px;
+  /* FONTS */
+  --main-font: calibri, Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
 }
 
-/* Any custom CSS below here */
+/* THEME SPECIFIC SHADING */
+/* LIGHT THEME */
+:is(.theme-light, .theme-dark .theme-light) {
+  --background-shading: rgba(252, 252, 252, 0.3);
+  --card-shading: rgba(252, 252, 252, 0.3);
+  --popout-shading: rgba(252, 252, 252, 0.7);
+  --modal-shading: rgba(252, 252, 252, 0.5);
+  --input-shading: rgba(0, 0, 0, 0.3);
+  --normal-text: #36363c;
+  --muted-text: #75757e;
+}
 
+/* ASH THEME */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0, 0, 0, 0.2);
+  --card-shading: rgba(0, 0, 0, 0.2);
+  --popout-shading: rgba(0, 0, 0, 0.6);
+  --modal-shading: rgba(0, 0, 0, 0.4);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #d8d8db;
+  --muted-text: #aeaeb4;
+}
 
+/* DARK THEME */
+:is(.theme-darker, .theme-light .theme-darker) {
+  --background-shading: rgba(0, 0, 0, 0.2);
+  --card-shading: rgba(0, 0, 0, 0.2);
+  --popout-shading: rgba(0, 0, 0, 0.6);
+  --modal-shading: rgba(0, 0, 0, 0.4);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #fbfbfb;
+  --muted-text: #94949c;
+}
+
+/* ONYX THEME */
+:is(.theme-midnight, .theme-light .theme-midnight) {
+  --background-shading: rgba(0, 0, 0, 0.1);
+  --card-shading: rgba(0, 0, 0, 0.4);
+  --popout-shading: rgba(0, 0, 0, 0.8);
+  --modal-shading: rgba(0, 0, 0, 0.6);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #dcdcde;
+  --muted-text: #86868e;
+}
